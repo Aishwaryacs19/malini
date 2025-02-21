@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<script>
+		    function SHOW(val){
+			 get.ElementById('DISPLAY').value+=val;
+		    }
+		    function SOLVE(){
+			  let x=get.ElementById('DISPLAY').value;
+			  let y=eval()
+			    get.ElementById('DISPLAY').value= y;
+			}
+			function CLEAR(){
+				get.ElementById('DISPLAY').value="";
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			<INPUT TYPE=TEXT ID=DISPLAY>
+			<BR>
+			 
+			<INPUT TYPE=BUTTON VALUE=1 ONCLICK=SHOW(1)>
+			<INPUT TYPE=BUTTON VALUE=2 ONCLICK=SHOW(2)>
+			<INPUT TYPE=BUTTON VALUE=3 ONCLICK=SHOW(3)>
+			<INPUT TYPE=BUTTON VALUE='+' ONCLICK=SHOW('+')>
+			<BR>
+			
+			<INPUT TYPE=BUTTON VALUE=4 ONCLICK=SHOW(4)>
+			<INPUT TYPE=BUTTON VALUE=5 ONCLICK=SHOW(5)>
+			<INPUT TYPE=BUTTON VALUE=6 ONCLICK=SHOW(6)>
+			<INPUT TYPE=BUTTON VALUE='-' ONCLICK=SHOW('-')>
+			<BR>
+
+		    <INPUT TYPE=BUTTON VALUE=7 ONCLICK=SHOW(7)>
+			<INPUT TYPE=BUTTON VALUE=8 ONCLICK=SHOW(8)>
+			<INPUT TYPE=BUTTON VALUE=9 ONCLICK=SHOW(9)>
+			<INPUT TYPE=BUTTON VALUE='*' ONCLICK=SHOW('*')>
+			<BR>
+			
+			<INPUT TYPE=BUTTON VALUE=C ONCLICK=CLEAR()>
+			<INPUT TYPE=BUTTON VALUE=0 ONCLICK=SHOW(0)>
+			<INPUT TYPE=BUTTON VALUE='=' ONCLICK=SOLVE()>
+			<INPUT TYPE=BUTTON VALUE='/' ONCLICK=SHOW('/')>
+			<BR> 
+		</form>
+	</body>
+</html>
+			 
+		 
+			
